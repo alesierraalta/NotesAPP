@@ -1,0 +1,65 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f7f9fc;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.App {
+  display: flex;
+  flex: 1;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.Sidebar, .MainContent {
+  padding: 20px;
+}
+
+.MainContent {
+  flex: 1;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .Sidebar {
+    width: 100%;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .MainContent {
+    padding: 10px;
+  }
+}
